@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- ✅ Quyền cần thiết -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <!-- ✅ Khai báo phần cứng điện thoại (tùy chọn) -->
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Lab1_BasicApp"
+        tools:targetApi="33">
+
+        <!-- 🌀 Màn hình Splash / Màn hình mở đầu -->
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Lab1_BasicApp.Splash">
+            <!-- Màn hình này sẽ là launcher khi mở app -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- 📞 Màn hình gọi điện & nhắn tin -->
+        <activity
+            android:name=".CallSmsActivity"
+            android:exported="false" />
+
+        <!-- 🎲 Màn hình tung xúc xắc -->
+        <activity
+            android:name=".DiceActivity"
+            android:exported="false" />
+
+        <!-- ⏳ Màn hình Loading Custom (Lab 2 - Bài 2) -->
+        <activity
+            android:name=".LoadingActivity"
+            android:exported="false" />
+
+        <!-- ✏️ Màn hình chính (máy tính) -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+
+    </application>
+
+</manifest>

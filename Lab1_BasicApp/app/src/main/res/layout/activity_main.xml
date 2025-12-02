@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:gravity="center_horizontal"
+    android:background="#FFF6FF">
+
+    <!-- Tiêu đề -->
+    <TextView
+        android:text="Máy tính đơn giản"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- Ô nhập số A -->
+    <EditText
+        android:id="@+id/txtA"
+        android:hint="Nhập số A"
+        android:inputType="numberDecimal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:backgroundTint="@color/purple_700" />
+
+    <!-- Ô nhập số B -->
+    <EditText
+        android:id="@+id/txtB"
+        android:hint="Nhập số B"
+        android:inputType="numberDecimal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:backgroundTint="@color/purple_700" />
+
+    <!-- Hàng nút phép toán -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:text="+"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/purple_700"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btnSub"
+            android:text="-"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:backgroundTint="@color/purple_700"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btnMul"
+            android:text="×"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:backgroundTint="@color/purple_700"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btnDiv"
+            android:text="÷"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:backgroundTint="@color/purple_700"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btnMod"
+            android:text="%"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:backgroundTint="@color/purple_700"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <!-- Hiển thị kết quả -->
+    <TextView
+        android:id="@+id/txtResult"
+        android:text="Kết quả sẽ hiển thị ở đây"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" />
+
+    <!-- Nút mở trò tung xúc xắc -->
+    <Button
+        android:id="@+id/btnOpenDice"
+        android:text="🎲 Mở trò tung xúc xắc"
+        android:textSize="18sp"
+        android:backgroundTint="@color/purple_700"
+        android:textColor="@color/white"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- Nút mở chức năng gọi & nhắn tin -->
+    <Button
+        android:id="@+id/btnOpenCallSms"
+        android:text="📞 Mở chức năng Gọi &amp; Nhắn tin"
+        android:textSize="18sp"
+        android:backgroundTint="@color/purple_700"
+        android:textColor="@color/white"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- Nút mở màn hình chào mừng -->
+    <Button
+        android:id="@+id/btnOpenSplash"
+        android:text="✨ Mở màn hình Chào mừng"
+        android:textSize="18sp"
+        android:backgroundTint="@color/purple_700"
+        android:textColor="@color/white"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <!-- ⏳ Nút mở màn hình Loading Custom (Bài 2 - Lab 2) -->
+    <Button
+        android:id="@+id/btnOpenLoading"
+        android:text="⏳ Mở màn hình Loading"
+        android:textSize="18sp"
+        android:backgroundTint="@color/purple_700"
+        android:textColor="@color/white"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
